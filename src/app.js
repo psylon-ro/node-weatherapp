@@ -57,6 +57,6 @@ app.get('*',(req, res)=>{
     res.render('pagenf',{title:'404', name:'upen',errormess: 'page not found'})
 })
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('server is up')
 })
